@@ -1,71 +1,43 @@
-Electricity-Billing-System-Project
+Electricity Billing System Project 
+The Electricity Billing System Project is a Java desktop application developed using Java Swing, aimed at managing electricity billing efficiently. This application provides a user-friendly interface for handling various aspects of electricity billing, including customer management, meter readings, bill calculations, and statement generation.
 
-The Java project on Electricity Bill Management System using Java Swing concepts creates a desktop application to manage electricity billing. It features a user-friendly interface for inputting customer details, recording meter readings, calculating bills, and generating printable statements.
+Application Features
+Admin Functions:
 
-There are two aspects of this application – Admin and Customer.
+Create New Customers: Admins can add new customers and assign meter information.
+View Customer Details: Admins can access and review details for all customers.
+Bill Calculation: Admins have the capability to calculate and manage bills for all customers.
+User Functions:
 
-The admin can create a new customer with new meter information assigned to the customer, view all customer details, and calculate the bills of all the customers.
+Account Creation: Users can create their own accounts after the admin sets up their meter information.
+Bill Calculation and Payment: Users can calculate and pay their electricity bills through the application.
+Personal Information Update: Users can update their personal details as needed.
+Generate Bills: Users can generate and view their electricity bills.
+Meter Information & Payment Status: Users can check their meter information and the status of their bill payments.
+Project Details
+Development Environment: The project is developed using IntelliJ IDEA.
 
-The user can create his own account after the admin has created his meter information and once the account is created user can view his account information.
+JDBC Integration: A JDBC library is included to facilitate the connection between the Java application and the MySQL database.
 
-It lets User perform multiple operations like:-
+Class Structure: The application is structured into various classes to ensure a seamless user experience:
 
-1- User can Signup and create account to track all bill details.
+Splash Screen: Displays an introductory screen.
+Signup Screen: Manages user account creation.
+Login Screen: Handles user login.
+Main Class: Serves as the central class for application logic.
+New Customer: Manages new customer entries.
+Pay Bill: Handles bill payment processes.
+Generate Bill: Generates bills for customers.
+Customer Details: Manages and displays customer information.
+Calculate Bill: Performs bill calculations.
+Bill Details: Displays detailed bill information.
+Deposit Details: Manages deposit-related information.
+Meter Info: Manages meter-related details.
+Update Information: Allows users to update their personal information.
+View Information: Facilitates viewing of information.
+Database Class (JDBC - MySQL): Manages database connections and interactions.
+Database Structure
+The MySQL database used in this project contains the following tables:
 
-2- User can Calculate and pay their Electricity Bill .
-
-3- User can update their own personal details.
-
-4- User can Generate Bill.
-
-5- User can see their meter info and the payment status of the bill.
-
-About Project:
-This Java application has been created using IntelliJ IDEA. Additional library was added for the support of JDBC (Required to setup the connection between the Database and Java Application).
-
-It contains multiple numbers of different classes which works together to create a better user experience .
-
-->Splash Screen class
-
-->Signup Screen class
-
-->Login Screen class
-
-->Main class
-
-->New Customer class
-
-->Pay Bill class
-
-->Generate Bill class
-
-->Customer Details class
-
-->Calculate Bill class
-
-->Bill details class
-
-->Deposit details class
-
-->Meter info class
-
-->Update information class
-
-->View information class
-
-->Database class(JDBC - MySQL)
-
-Database (MySQL)
-Database for this Electricity Billing System contains 5 Tables
-
-->Signup Table (UserName,Password)
-
-->New Customer Table(Name, MeterNumber, Address, State, City, Email, Phone)
-
-->Meter Info Table(Meter Number, Meter Location, Meter Type, Phase Code, Bill Type, Days)
-
-->Tax Table(Cost per unit, Meter Rent, Service Charge, Service Tax, Swacch Bharat Tax, Fixed Tax)
-
-->Bill Table (Meter Number, Month, Unit, Total bill, status)
-
-Java communicates with MySQL tables using JDBC which stands for Java Database Connectivity.
+Signup Table: Stores user credentials (UserName, Password).
+New Customer Table: Contains customer details (Name, MeterNumber, Address, State, City, Email, Phone).
